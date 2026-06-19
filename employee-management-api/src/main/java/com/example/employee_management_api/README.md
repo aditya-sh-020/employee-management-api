@@ -1,18 +1,19 @@
 # Employee Management System
 
-A Spring Boot REST API project for managing employees.
+A Spring Boot REST API project for managing employee records with CRUD operations.
 
-## Technologies
+## Tech Stack
 
 - Java 17
-- Spring Boot
+- Spring Boot 3
 - Spring Data JPA
 - MySQL
 - Maven
+- Postman
 
 ## Features
 
-- Add Employee
+- Create Employee
 - Get All Employees
 - Get Employee By ID
 - Update Employee
@@ -20,12 +21,28 @@ A Spring Boot REST API project for managing employees.
 
 ## API Endpoints
 
-POST /api/employees
+| Method | Endpoint | Description |
+|---|---|---|
+| POST | /api/employees | Create Employee |
+| GET | /api/employees | Get All Employees |
+| GET | /api/employees/{id} | Get Employee By ID |
+| PUT | /api/employees/{id} | Update Employee |
+| DELETE | /api/employees/{id} | Delete Employee |
 
-GET /api/employees
+## Run Project
 
-GET /api/employees/{id}
+1. Clone repository
 
-PUT /api/employees/{id}
+2. Configure MySQL database
 
-DELETE /api/employees/{id}
+3. Run:
+
+mvn spring-boot:run
+
+## Database
+
+MySQL database is used with Spring Data JPA.
+
+## Author
+
+Aditya
